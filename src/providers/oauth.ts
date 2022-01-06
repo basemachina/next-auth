@@ -145,6 +145,7 @@ export interface OAuthConfig<P> extends CommonProviderOptions, PartialIssuer {
   requestTokenUrl?: string
   profileUrl?: string
   encoding?: string
+  jwksUri?: string
 }
 
 export type OAuthUserConfig<P> = Omit<

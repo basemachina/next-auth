@@ -12,9 +12,9 @@ export async function openidClient(
   options: InternalOptions<"oauth">
 ): Promise<Client> {
   const provider = options.provider
-  
+
   if (provider.httpOptions) custom.setHttpOptionsDefaults(provider.httpOptions)
-  
+
   let issuer: Issuer
   if (provider.wellKnown) {
     issuer = await Issuer.discover(provider.wellKnown)
@@ -28,6 +28,7 @@ export async function openidClient(
       token_endpoint: provider.token?.url ?? provider.token,
       // @ts-expect-error
       userinfo_endpoint: provider.userinfo?.url ?? provider.userinfo,
+      jwks_uri: provider.jwksUri as string,
     })
   }
 
