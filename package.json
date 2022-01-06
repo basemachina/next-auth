@@ -1,9 +1,9 @@
 {
-  "name": "next-auth",
+  "name": "@basemachina/next-auth",
   "version": "0.0.0-semantically-released",
   "description": "Authentication for Next.js",
   "homepage": "https://next-auth.js.org",
-  "repository": "https://github.com/nextauthjs/next-auth.git",
+  "repository": "https://github.com/basemachina/next-auth.git",
   "author": "Iain Collins <me@iaincollins.com>",
   "contributors": [
     "Balázs Orbán <info@balazsorban.com>",
